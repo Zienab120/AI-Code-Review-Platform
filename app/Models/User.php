@@ -23,6 +23,10 @@ class User extends Authenticatable
         'email',
         'password',
         'email_verified_at',
+        'github_id',
+        'github_token',
+        'github_refresh_token',
+        'github_expires_at',
     ];
 
     /**
@@ -44,6 +48,7 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'github_expires_at' => 'datetime',
         ];
     }
 }

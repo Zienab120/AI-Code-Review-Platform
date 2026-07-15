@@ -2,11 +2,13 @@
 
 namespace App\Services;
 
+use Illuminate\Support\Facades\Http;
+
 class PullRequsetService
 {
     protected function client($user)
     {
-        return Http::withToken($this->getValidToken($user))
+        return Http::withToken($user->github_token)
             ->withHeaders(['Accept' => 'application/vnd.github+json'])
             ->baseUrl('https://api.github.com');
     }

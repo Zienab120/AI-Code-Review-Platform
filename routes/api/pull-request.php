@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 use App\Http\Controllers\API\PullRequestController;
 use Illuminate\Support\Facades\Route;

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 use App\Http\Controllers\API\OrganizationController;
 use Illuminate\Support\Facades\Route;
@@ -15,5 +15,4 @@ Route::middleware('auth:sanctum')->controller(OrganizationController::class)->pr
 
     Route::get('/', 'index');
     Route::get('/{organizationID}/members', 'getOrganizationMembers');
-    
 });

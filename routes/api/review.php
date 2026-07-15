@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 use App\Http\Controllers\API\ReviewController;
 use Illuminate\Support\Facades\Route;
